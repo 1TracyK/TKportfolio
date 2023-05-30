@@ -45,11 +45,16 @@ section {
 	justify-content: space-between;
 	align-items: center;
 	z-index: 100;
-	transition: 0.3s;
+	transition: 0.3;
+}
+
+.navbar-brand {
+	font-size: 24px !important;
+	color: var(--main-color) !important;
 }
 
 .header.sticky {
-	background: var(--bg-color);
+	background: yellowgreen;
 }
 
 .logo {
@@ -417,6 +422,7 @@ span {
 	padding: 0 4rem;
 	transform: translateY(100%);
 	transition: 0.5s ease;
+	cursor: pointer;
 }
 
 .portfolio-box:hover .portfolio-layer {
@@ -448,6 +454,7 @@ span {
 	color: var(--main-color);
 }
 
+/*
 .contact-content {
 	text-align: center;
 }
@@ -495,17 +502,66 @@ span {
 	cursor: pointer;
 }
 
+*/
+
+.container {
+	width: 100%;
+	height: 100vh;
+	background: var(--bg-color);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+form {
+	background: var(--second-bg-color);
+	display: flex;
+	flex-direction: column;
+	padding: 2vw 4vw;
+	width: 90%;
+	max-width: 600px;
+	border-radius: 10px;
+}
+
+form h3 {
+	color: var(--main-color);
+	font-weight: 800;
+	margin-bottom: 22px;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+form input,
+form textarea {
+	border: 0;
+	margin: 10px 0;
+	padding: 20px;
+	outline: none;
+	background: var(--text-color);
+	font-size: 16px;
+}
+
+form button {
+	padding: 15px;
+	background: var(--main-color);
+	color: var(--bg-color);
+	font-size: 18px;
+	border: 0;
+	outline: none;
+	cursor: pointer;
+	width: 150px;
+	margin: 20px auto 0;
+	border-radius: 30px;
+}
 .footer-iconTop a {
-	position: relative;
-	display: inline-block;
+	display: inline-flex;
 	justify-content: center;
 	align-items: center;
 	padding: 0.8rem;
 	background: var(--main-color);
-	border: 0.2rem solid var(--main-color);
-	border-radius: 0.6rem;
-	z-index: 1;
-	overflow: hidden;
+	border-radius: 0.8rem;
+	transition: 0.5s;
 }
 
 .footer-iconTop a::before {
@@ -517,7 +573,7 @@ span {
 	height: 100%;
 	background: var(--second-bg-color);
 	z-index: -1;
-	transition: 0.5s;
+	transition: 0.5s ease;
 }
 
 .footer-iconTop a:hover::before {
@@ -538,6 +594,10 @@ span {
 	color: var(--main-color);
 }
 
+.portfolio {
+	padding-bottom: 7rem;
+}
+
 .footer {
 	display: flex;
 	display: grid;
@@ -546,6 +606,7 @@ span {
 	flex-wrap: wrap;
 	padding: 2rem 9%;
 	background: var(--second-bg-color);
+	flex-direction: column-reverse;
 }
 
 .footer-text p {
@@ -562,5 +623,11 @@ span {
 @media (max-width: 991px) {
 	.header {
 		padding: 2rem 4%;
+	}
+}
+
+@media (max-width: 576px) {
+	.navbar {
+		background-color: rgba(0, 0, 0, 0.5);
 	}
 }

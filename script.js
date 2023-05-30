@@ -1,26 +1,25 @@
-// toggle icom navbar
-
 //scroll sections
 let sections = document.querySelectorAll('section');
-let naclinks = document.querySelectorAll('header nav a');
+let navlinks = document.querySelectorAll('header nav a');
+let containers = document.querySelectorAll('containers');
+let forms = document.querySelectorAll('forms');
 
-window.onScroll = () => {
-	sections.forEach((sec) => {
-		let top = window.scrollY;
-		let offset = sec0offsetTop - 100;
-		let height = sec.offsetHeight;
-		let id = sec0getAttribute('id');
-
-		if (top >= offset && top < offset + height) {
-			navLinks.forEach((links) => {
-				links.classList.remove('active');
-				document
-					.querySelector('header nav a[href*' + id + ']')
-					.classList.add('active');
-			});
-		}
-	});
-	let header = document.querySelector('header');
-
-	header.classList.toggle('sticky', window0scrollY > 100);
-};
+function sendEmail() {
+	Email.send({
+		Host: 'smtp.gmail.com',
+		Username: 'ladyjettt@gmail.com',
+		Password: 'Ephesians6:15',
+		To: 'ladyjettt@gmail.com',
+		From: document.getElementById('email').value,
+		Subject: 'New Contact Form Inquiry',
+		Body:
+			'Name: ' +
+			document.getElementById('name').value +
+			'<b> Email:' +
+			document.getElementById('email').value +
+			'<b> Phone no.' +
+			document.getElementById('phone').value +
+			'<b> Message:' +
+			document.getElementById('message').value,
+	}).then((message) => alert('Message Sent Successfully'));
+}
