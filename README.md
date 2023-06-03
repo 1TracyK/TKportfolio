@@ -17,6 +17,4 @@ The technolgies used in the website are HTML, CSS, JS and VS code.
 
 You will find this project hosted on github at: https://1tracyk.github.io/TKportfolio/
 
-https://scribehow.com/shared/Workflow__SPdP1a3IQQebd18WNggVuA
-
 This website was inspired by Codehal.
