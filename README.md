@@ -13,7 +13,7 @@ You click the specified link to view the desired project.
 
 Then finally you can contact me through my contact page.
 
-The technolgies used in the website are HTML, CSS, JS and VS code.
+The technologies used in the website are HTML, CSS, JS and VS code.
 
 You will find this project hosted on github at: https://1tracyk.github.io/TKportfolio/
 
