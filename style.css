@@ -96,7 +96,7 @@ section {
 	position: absolute;
 	top: 0;
 	right: 0;
-	width: 45%;
+	width: 60%;
 	height: 100%;
 	background: transparent;
 	transition: 3s;
@@ -243,7 +243,7 @@ section {
 
 .home-sci {
 	position: absolute;
-	bottom: 10px;
+	bottom: 40px;
 	width: 170px;
 	display: flex;
 	justify-content: space-between;
@@ -578,5 +578,23 @@ span {
 @media (max-width: 576px) {
 	.navbar {
 		background-color: rgba(0, 0, 0, 0.5);
+	}
+}
+
+@media (max-width: 576px) {
+	.body {
+		padding: 2rem 4%;
+	}
+}
+
+@media (max-width: 576px) {
+	.about-content {
+		padding: 2rem 4%;
+	}
+}
+
+@media (max-width: 576px) {
+	.home-content {
+		padding: 2rem 4%;
 	}
 }
