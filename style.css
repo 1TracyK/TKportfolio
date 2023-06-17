@@ -28,6 +28,7 @@ html {
 body {
 	background: var(--bg-color);
 	color: var(--text-color);
+	min-width: 400px;
 }
 
 section {
@@ -564,6 +565,7 @@ span {
 .link-color {
 	text-decoration: none;
 	color: white;
+	font-size: 14px;
 }
 
 @media (max-width: 1200px) {
