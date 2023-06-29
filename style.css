@@ -56,7 +56,7 @@ section {
 }
 
 .header.sticky {
-	background: yellowgreen;
+	background: transparent;
 }
 
 .logo {
@@ -95,16 +95,6 @@ section {
 	display: flex;
 }
 
-.home-imgHover {
-	position: absolute;
-	top: 0;
-	right: 0;
-	height: 100%;
-	width: 100%;
-	background: transparent;
-	transition: 3s;
-}
-
 .home-imgHover:hover {
 	background: var(--bg-color);
 	opacity: 0.8;
@@ -133,8 +123,8 @@ section {
 }
 
 .home-content p {
-	font-size: 1.6rem;
-	margin: 2rem 0 4rem;
+	font-size: 16px;
+	margin: 20px 0 40px;
 }
 
 .home-content .btn-box {
@@ -144,7 +134,7 @@ section {
 	height: 50px;
 }
 
-.btn-box .btn {
+.btn-box a {
 	position: relative;
 	display: inline-flex;
 	justify-content: center;
@@ -223,13 +213,21 @@ section {
 	transition: 0.5s;
 }
 
-.btn-box a:nth-child(2) ::before {
-	background: transparent;
+.btn-box a:hover {
 	color: var(--main-color);
 }
 
 .btn-box a:nth-child(2) {
+	background: transparent;
 	color: var(--main-color);
+}
+
+.btn-box a:nth-child(2):hover {
+	color: var(--bg-color);
+}
+
+.btn-box a:nth-child(2)::before {
+	background: var(--main-color);
 }
 
 .btn-box a::before {
@@ -379,11 +377,12 @@ span {
 	justify-content: center;
 	font-size: 22px;
 	text-align: center;
+	font-weight: 700;
 }
 
 .portfolio-container {
 	display: grid;
-	grid-template-columns: repeat(3, 1fr);
+	grid-template-columns: repeat(2, 1fr);
 	align-items: center;
 	gap: 2.5rem;
 	cursor: pointer;
@@ -432,6 +431,7 @@ span {
 .porfolio-layer h4 {
 	font-size: 18px;
 	color: var(--text-color);
+	font-family: 'Poppins', sans-serif;
 }
 
 .portfolio-layer p {
@@ -562,10 +562,12 @@ span {
 	font-size: 1.6rem;
 	text-align: center;
 }
+
 .link-color {
 	text-decoration: none;
 	color: white;
 	font-size: 14px;
+	font-family: 'Poppins', sans-serif;
 }
 
 @media (max-width: 1200px) {
