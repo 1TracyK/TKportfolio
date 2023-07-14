@@ -93,6 +93,7 @@ section {
 	background-size: 40%;
 	background-position: right;
 	display: flex;
+	min-width: 400px;
 }
 
 .home-imgHover:hover {
@@ -123,8 +124,8 @@ section {
 }
 
 .home-content p {
-	font-size: 16px;
-	margin: 20px 0 40px;
+	font-size: 1.6rem;
+	margin: 2rem 0 3rem;
 }
 
 .home-content .btn-box {
@@ -247,14 +248,22 @@ section {
 }
 
 .home-sci {
+	font-size: 30px;
+	align-items: center;
+	justify-content: center;
+	display: flex;
+}
+
+.footer-sci {
 	position: absolute;
 	bottom: 40px;
 	width: 170px;
 	display: flex;
 	justify-content: space-between;
+	align-items: center;
 }
 
-.home-sci a {
+.footer-sci a {
 	position: relative;
 	display: inline-flex;
 	justify-content: center;
@@ -264,15 +273,15 @@ section {
 	background: transparent;
 	border: 2px solid #00abf0;
 	border-radius: 50%;
-	font-size: 20px;
+	font-size: 40px;
 	color: var(--main-color);
 	text-decoration: none;
-	z-index: 1;
+	z-index: -1;
 	overflow: hidden;
 	transition: 0.5s;
 }
 
-.home-sci a::before {
+.footer-sci a::before {
 	content: '';
 	position: absolute;
 	top: 0;
@@ -283,15 +292,14 @@ section {
 	z-index: -1;
 }
 
-.home-sci a:hover::before {
+.footer-sci a:hover::before {
 	width: 100%;
 }
 
-.home-sci a:hover {
+.footer-sci a:hover {
 	color: #081b29;
 }
 
-/*KEYFRAMES ANIMATION*/
 @keyframes showRight {
 	100% {
 		width: 0;
@@ -503,10 +511,16 @@ span {
 	cursor: pointer;
 }
 
+.footer-iconTop {
+	justify-content: right;
+	align-items: center;
+	display: flex;
+}
+
 .footer-iconTop a {
 	display: inline-flex;
-	justify-content: center;
-	align-items: center;
+	justify-content: right;
+	align-items: right;
 	padding: 0.8rem;
 	background: var(--main-color);
 	border-radius: 0.8rem;
@@ -517,7 +531,7 @@ span {
 	content: '';
 	position: absolute;
 	top: 0;
-	left: 0;
+	right: 0;
 	width: 0;
 	height: 100%;
 	background: var(--second-bg-color);
@@ -548,12 +562,10 @@ span {
 }
 
 .footer {
-	display: flex;
-	display: grid;
 	justify-content: space-between;
 	align-items: center;
 	flex-wrap: wrap;
-	padding: 2rem 9%;
+	padding: 2rem 9% !important;
 	background: var(--second-bg-color);
 	flex-direction: column-reverse;
 }
@@ -572,7 +584,7 @@ span {
 
 @media (max-width: 1200px) {
 	html {
-		font-size: 55%;
+		font-size: 55% !important;
 	}
 }
 
@@ -586,9 +598,7 @@ span {
 	.navbar {
 		background-color: rgba(0, 0, 0, 0.5);
 	}
-}
 
-@media (max-width: 576px) {
 	.body {
 		padding: 2rem 4%;
 	}
