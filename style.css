@@ -610,7 +610,7 @@ span {
 	}
 }
 
-@media (max-width: 576px) {
+@media (max-width: 476px) {
 	.home-content {
 		padding: 2rem 4%;
 	}
